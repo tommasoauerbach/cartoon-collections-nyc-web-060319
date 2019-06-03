@@ -22,7 +22,7 @@ fruits = %w[
 ]
 def summon_captain_planet(fruits)
   names.map! {|name| name.capitalize}
-  names.each { |name| puts name + "!"}
+  names.each { |name| puts name + "!" }
 end
 
 def long_planeteer_calls# code an argument here
