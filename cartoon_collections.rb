@@ -13,7 +13,7 @@ def roll_call_dwarves(dwarves)
   end
 end
 
-fruits = %w[
+veggies = %w[
   earth
   wind
   fire
@@ -21,8 +21,7 @@ fruits = %w[
   heart
 ]
 def summon_captain_planet(veggies)
-  veggies.map! {|veggie| veggie.capitalize}
-  veggies.each { |veggie| puts veggie + "!" }
+  veggies.map! {|veggie| veggie.capitalize + '!'}
 end
 
 def long_planeteer_calls# code an argument here
