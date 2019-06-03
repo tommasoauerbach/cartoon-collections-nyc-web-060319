@@ -1,16 +1,40 @@
+dwarves = %w[
+  Doc
+  Dopey
+  Bashful
+  Grumpy
+  Sneezy
+  Sleepy
+  Happy
+]
 def roll_call_dwarves(dwarves)
-  dwarves.each_with_index do { |dwarves, index| roll_call_dwarves[dwarves] = index }
+  dwarves.each_with_index do |dwarf, index|
+    puts "#{index+1}. #{dwarf}"
+  end
 end
 
-def summon_captain_planet# code an argument here
-  # Your code here
+veggies = %w[
+  earth
+  wind
+  fire
+  water
+  heart
+]
+def summon_captain_planet(veggies)
+  veggies.map! {|veggie| veggie.capitalize + '!'}
 end
 
-def long_planeteer_calls# code an argument here
-  # Your code here
+
+def long_planeteer_calls(planeteer_calls)
+  planeteer_calls.any? { |call| call.length > 4 }
 end
 
-def find_the_cheese# code an argument here
-  # the array below is here to help
-  cheese_types = ["cheddar", "gouda", "camembert"]
+potentially_cheesy_items = %w[umbrella spinach cheddar helicopter]
+
+def find_the_cheese(potentially_cheesy_items)
+  cheeses = %w[gouda cheddar camembert]
+
+  potentially_cheesy_items.find do |maybe_cheese|
+    cheeses.include?(maybe_cheese)
+  end
 end
