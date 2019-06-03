@@ -20,9 +20,9 @@ fruits = %w[
   water
   heart
 ]
-def summon_captain_planet(fruits)
-  names.map! {|name| name.capitalize}
-  names.each { |name| puts name + "!" }
+def summon_captain_planet(veggies)
+  veggies.map! {|veggie| name.capitalize}
+  veggies.each { |veggie| puts name + "!" }
 end
 
 def long_planeteer_calls# code an argument here
